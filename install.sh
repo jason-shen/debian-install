@@ -37,7 +37,7 @@ nala install libqt5svg5 qml-module-qtquick-controls qml-module-qtquick-controls2
 # Installing Essential Programs 
 nala install feh rofi polybar picom thunar lxpolkit x11-xserver-utils unzip yad wget pulseaudio pavucontrol conky -y
 # Installing Other less important Programs
-nala install neofetch curl flameshot psmisc mangohud firefox vim lxappearance papirus-icon-theme lxsession lxappearance fonts-noto-color-emoji sddm variety -y
+nala install neofetch curl flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxsession lxappearance fonts-noto-color-emoji sddm variety -y
 
 echo "installing rust"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
