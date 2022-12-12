@@ -33,12 +33,12 @@ cd "/home/$username/.config/leftwm/themes/" || exit
 ln -s basic_polybar current
 
 # Installing sugar-candy dependencies
-nala install libqt5svg5 qml-module-qtquick-controls qml-module-qtquick-controls2 -y
+# nala install libqt5svg5 qml-module-qtquick-controls qml-module-qtquick-controls2 -y
 # Installing Essential Programs 
-nala install feh rofi polybar picom thunar lxpolkit x11-xserver-utils unzip yad wget pulseaudio pavucontrol -y
+nala install xorg feh rofi polybar picom thunar unzip yad wget pulseaudio -y
 # Installing Other less important Programs
-nala install neofetch curl flameshot psmisc mangohud vim lxappearance papirus-icon-theme lxsession lxappearance fonts-noto-color-emoji sddm variety -y
-nala install build-essential
+nala install neofetch curl flameshot vim lxappearance papirus-icon-theme lxsession fonts-noto-color-emoji sddm variety -y
+nala install build-essential -y
 # echo "installing rust"
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # echo ".  '/home/$username/.cargo/env'" >> "/home/$username/.profile" || exit
