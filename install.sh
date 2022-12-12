@@ -26,7 +26,7 @@ mkdir -p "/home/$username/.config/leftwm/themes"
 
 mkdir -p /usr/share/sddm/themes
 
-cp -R "$builddir/config/*" "/home/$username/.config/"
+cp -R "$builddir/config/"* "/home/$username/.config/"
 chown -R "$username:$username" "/home/$username"
 
 cd ~/.config/leftwm/themes/ || exit
