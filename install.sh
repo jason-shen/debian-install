@@ -26,7 +26,7 @@ mkdir -p "/home/$username/.config/leftwm/themes"
 
 mkdir -p /usr/share/sddm/themes
 
-cp -R config/* "/home/$username/.config/"
+cp -R "$builddir/config/*" "/home/$username/.config/"
 chown -R "$username:$username" "/home/$username"
 
 cd ~/.config/leftwm/themes/ || exit
@@ -41,10 +41,10 @@ nala install neofetch curl flameshot psmisc mangohud vim lxappearance papirus-ic
 
 echo "installing rust"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
+echo "install leftwm"
 cargo install leftwm
 
-sudo cp "/home/$username/leftwm/leftwm.desktop" /usr/share/xsessions
+sudo cp "$builddir/leftwm.desktop" /usr/share/xsessions
 
 # Download Nordic Theme
 cd /usr/share/themes/ || exit
