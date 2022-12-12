@@ -37,7 +37,7 @@ ln -s basic_polybar current
 # Installing Essential Programs 
 nala install xorg feh rofi polybar picom thunar unzip yad wget pulseaudio -y
 # Installing Other less important Programs
-nala install neofetch curl flameshot vim lxappearance papirus-icon-theme lxsession fonts-noto-color-emoji sddm variety -y
+nala install neofetch curl flameshot vim lxappearance papirus-icon-theme fonts-noto-color-emoji sddm variety -y
 nala install build-essential -y
 # echo "installing rust"
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
