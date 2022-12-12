@@ -41,7 +41,7 @@ nala install neofetch curl flameshot psmisc mangohud vim lxappearance papirus-ic
 nala install build-essential
 echo "installing rust"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source "$HOME/.cargo/env" || exit
+source "home/$username/.cargo/env" || exit
 echo "install leftwm"
 cargo install leftwm
 
