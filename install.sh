@@ -29,7 +29,7 @@ mkdir -p /usr/share/sddm/themes
 cp -R "$builddir/config/"* "/home/$username/.config/"
 chown -R "$username:$username" "/home/$username"
 
-cd ~/.config/leftwm/themes/ || exit
+cd "/home/$username/.config/leftwm/themes/" || exit
 ln -s basic_polybar current
 
 # Installing sugar-candy dependencies
